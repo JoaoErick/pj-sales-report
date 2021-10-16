@@ -56,13 +56,13 @@ message = f'''
 
     <p>Segue o Relatório de Vendas por cada Loja.</p>
 
-    <p><h5>Faturamento:</h5></p>
+    <p><h3>Faturamento:</h3></p>
     {revenues.to_html(formatters={'Valor Final': 'R$ {:,.2f}'.format})}
 
-    <p><h5>Quantidade Vendida:</h5></p>
+    <p><h3>Quantidade Vendida:</h3></p>
     {amount.to_html()}
 
-    <p><h5>Ticket Médio dos Produtos em cada Loja:</h5></p>
+    <p><h3>Ticket Médio dos Produtos em cada Loja:</h3></p>
     {average_ticket.to_html(formatters={'Ticket Médio': 'R$ {:,.2f}'.format})}
 
     <p>Qualquer dúvida, estou à disposição.</p>
